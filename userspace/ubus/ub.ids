@@ -1,0 +1,62 @@
+#
+#	List of UBUS ID's
+#
+# Syntax:
+# vendor  vendor_name
+#	device  device_name				<-- single tab
+# C base_code  class_base_name
+#	sub_code  class_sub_name				<-- single tab
+
+cc08  Huawei Technologies Co., Ltd.
+	a000  Bus controller
+	a001  URMA management ub entity
+	a002  URMA ub entity
+	a003  CDMA management ub entity
+	a004  CDMA ub entity
+	a005  PMU management ub entity
+	a006  PMU ub entity
+	a007  Master Ctrl entity
+	a00a  Bus controller
+	a00b  URMA management ub entity
+	a00c  URMA ub entity
+	a00d  CDMA management ub entity
+	a00e  CDMA ub entity
+	a00f  PMU management ub entity
+	a010  PMU ub entity
+	a011  Master Ctrl entity
+	d802  URMA management ub entity
+	d803  URMA ub entity
+	d804  CDMA management ub entity
+	d805  CDMA ub entity
+	d806  PMU management ub entity
+	d807  PMU ub entity
+	d808  CCU management ub entity
+	d809  CCU ub entity
+	d80a  Bus controller
+	d80b  URMA UBoE management ub entity
+	d80c  URMA UBoE ub entity
+	d812  URMA management ub entity
+	d813  URMA ub entity
+	d814  CDMA management ub entity
+	d815  CDMA ub entity
+	d816  PMU management ub entity
+	d817  PMU ub entity
+	d818  CCU management ub entity
+	d819  CCU ub entity
+	d81a  Bus controller
+	d81b  URMA UBoE management ub entity
+	d81c  URMA UBoE ub entity
+	8200  SP500U Family management ub entity
+	8201  SP500U Family ub entity
+C 00  Bus controller
+	00  UB bus controller
+C 01  Memory controller
+	00  LPC memory controller
+	01  LBC memory controller
+C 02  Network controller
+	00  UB network controller
+	01  Ether network controller
+C 03  Switch device
+	00  UB switch device
+C 04  Neural network device
+	00  UB neural network device

@@ -1,0 +1,50 @@
+/*
+ * SPDX-License-Identifier: MIT
+ * Copyright (c) Huawei Technologies Co., Ltd. 2025-2025. All rights reserved.
+ * Description: umq perftest param process
+ * Create: 2025-8-29
+ */
+
+#ifndef UMQ_PERFTEST_PARAM_H
+#define UMQ_PERFTEST_PARAM_H
+
+#include <netinet/in.h>
+#include <stdint.h>
+#include <stdio.h>
+
+#include "perftest_util.h"
+#include "umq_types.h"
+#include "umq_pro_types.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#define UMQ_PERFTEST_PORT_NUM (4)
+
+typedef struct umq_perftest_config {
+    perftest_config_t config;
+    umq_port_id_t port_id[UMQ_PERFTEST_PORT_NUM];
+    uint32_t used_port_num;
+    uint32_t trans_mode;
+    uint32_t feature;
+    uint32_t test_round;
+    umq_buf_mode_t buf_mode;
+    umq_tp_mode_t tp_mode;
+    umq_tp_type_t tp_type;
+    uint16_t eid_idx;
+    bool buf_multiplex;
+    bool use_atomic_window;
+    bool enable_perf;
+    uint32_t blk_mode;
+    uint8_t priority;
+    bool share_jfr;        // share jfr: 1 main + 1 sub, sub reuses main's FC jfr_ctx
+} umq_perftest_config_t;
+
+int umq_perftest_parse_arguments(int argc, char **argv, umq_perftest_config_t *cfg);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // UMQ_LIB_PERFTEST_PARAM_H
